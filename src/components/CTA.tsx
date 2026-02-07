@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function CTA() {
   return (
     <section id="download" className="relative px-6 py-24 md:py-32">
@@ -7,8 +9,8 @@ export default function CTA() {
           <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-[300px] w-[300px] rounded-full bg-[#4A6CF7]/10 blur-[80px]" />
 
           <div className="relative z-10">
-            <div className="mb-6 flex h-16 w-16 mx-auto items-center justify-center rounded-2xl bg-gradient-to-br from-[#4A6CF7] to-[#3454D1] text-2xl font-bold text-white shadow-xl shadow-[#4A6CF7]/25">
-              합
+            <div className="mb-6 mx-auto w-16 h-16 rounded-2xl overflow-hidden shadow-xl shadow-[#4A6CF7]/25">
+              <Image src="/images/app-icon.png" alt="합격노트" width={64} height={64} className="h-16 w-16" />
             </div>
 
             <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl">

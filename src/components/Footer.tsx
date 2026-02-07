@@ -1,10 +1,12 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="border-t border-white/5 px-6 py-12">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 text-center">
         <div className="flex items-center gap-3">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-[#4A6CF7] to-[#3454D1] text-sm font-bold text-white">
-            합
+          <div className="h-8 w-8 rounded-lg overflow-hidden">
+            <Image src="/images/app-icon.png" alt="합격노트" width={32} height={32} className="h-8 w-8" />
           </div>
           <span className="text-base font-semibold text-[var(--text-primary)]">합격노트</span>
         </div>

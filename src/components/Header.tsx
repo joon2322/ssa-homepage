@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const navLinks = [
   { href: "#features", label: "기능" },
@@ -45,8 +46,8 @@ export default function Header() {
           }}
           className="flex items-center gap-3 group"
         >
-          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-[#4A6CF7] to-[#3454D1] text-white text-sm font-bold shadow-lg shadow-[#4A6CF7]/20 transition-transform duration-300 group-hover:scale-110">
-            합
+          <div className="h-9 w-9 rounded-xl overflow-hidden shadow-lg shadow-[#4A6CF7]/20 transition-transform duration-300 group-hover:scale-110">
+            <Image src="/images/app-icon.png" alt="합격노트" width={36} height={36} className="h-9 w-9" />
           </div>
           <span className="text-lg font-bold text-[var(--text-primary)] tracking-tight">
             합격노트

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 pt-24 pb-16">
@@ -7,8 +9,15 @@ export default function Hero() {
 
       <div className="relative z-10 flex flex-col items-center text-center">
         {/* App Icon */}
-        <div className="animate-fade-in-up mb-8 flex h-24 w-24 items-center justify-center rounded-[28px] bg-gradient-to-br from-[#4A6CF7] to-[#3454D1] text-4xl font-bold text-white shadow-2xl shadow-[#4A6CF7]/30 animate-pulse-glow">
-          합
+        <div className="animate-fade-in-up mb-8 animate-pulse-glow rounded-[28px] shadow-2xl shadow-[#4A6CF7]/30 overflow-hidden">
+          <Image
+            src="/images/app-icon.png"
+            alt="합격노트 앱 아이콘"
+            width={96}
+            height={96}
+            className="h-24 w-24"
+            priority
+          />
         </div>
 
         {/* Badge */}
