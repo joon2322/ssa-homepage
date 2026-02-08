@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { siteConfig } from "@/data/config";
+import { heroContent } from "@/data/content";
 
 export default function Hero() {
   return (
@@ -24,22 +25,22 @@ export default function Hero() {
         {/* Badge */}
         <div className="animate-fade-in-up animation-delay-100 mb-6 inline-flex items-center gap-2 rounded-full border border-[#4A6CF7]/20 bg-[#4A6CF7]/10 px-4 py-1.5 text-sm font-medium text-[#6B8AFF]">
           <span className="h-2 w-2 rounded-full bg-[#4A6CF7]" />
-          사진+PDF 가림막 암기 앱
+          {heroContent.badge}
         </div>
 
         {/* Title */}
         <h1 className="animate-fade-in-up animation-delay-200 mb-4 text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl">
-          <span className="gradient-text">합격노트</span>
+          <span className="gradient-text">{heroContent.title}</span>
         </h1>
 
         {/* Subtitle */}
         <p className="animate-fade-in-up animation-delay-300 mb-3 text-xl font-medium text-[var(--text-secondary)] sm:text-2xl">
-          이동 중에도 공부가 되게
+          {heroContent.subtitle}
         </p>
 
         {/* Tagline */}
         <p className="animate-fade-in-up animation-delay-400 mb-12 max-w-lg text-base text-[var(--text-secondary)] leading-relaxed">
-          열면 바로 공부. 짜투리 시간에 꺼내서 보고, 바로 닫을 수 있는 가림막 암기 앱입니다. 공무원 · 자격증 · 수능 · 기사 시험 준비에 딱!
+          {heroContent.description}
         </p>
 
         {/* CTA Buttons */}

@@ -42,3 +42,9 @@ preview-*.png
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Screenshot input (temp folder)
+screenshots-input/*.png
+screenshots-input/*.PNG
+screenshots-input/*.jpg
+screenshots-input/*.JPG

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { siteConfig } from "@/data/config";
+import { ctaContent } from "@/data/content";
 
 export default function CTA() {
   return (
@@ -15,13 +16,13 @@ export default function CTA() {
             </div>
 
             <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl">
-              <span className="gradient-text">오늘도 한 페이지,</span>
+              <span className="gradient-text">{ctaContent.title}</span>
               <br />
-              <span className="gradient-text-blue">내일의 합격을 위해</span>
+              <span className="gradient-text-blue">{ctaContent.titleAccent}</span>
             </h2>
 
             <p className="mb-8 text-[var(--text-secondary)]">
-              지금 바로 시작하세요. 무료입니다.
+              {ctaContent.description}
             </p>
 
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -39,7 +40,7 @@ export default function CTA() {
             </div>
 
             <p className="mt-6 text-xs text-[var(--text-muted)]">
-              iOS 17.0 이상 · iPhone 전용 · 무료
+              {ctaContent.footnote}
             </p>
           </div>
         </div>

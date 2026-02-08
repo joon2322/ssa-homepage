@@ -1,13 +1,5 @@
 import Image from "next/image";
-
-const screenshots = [
-  { src: "/images/screen_splash.png", caption: "앱 시작" },
-  { src: "/images/screen_notes.png", caption: "노트 목록" },
-  { src: "/images/screen_mask_edit.png", caption: "가림막 편집" },
-  { src: "/images/screen_study.png", caption: "학습 모드" },
-  { src: "/images/screen_grading.png", caption: "채점하기" },
-  { src: "/images/screen_result.png", caption: "평가 결과" },
-];
+import { screenshotsContent } from "@/data/content";
 
 export default function Screenshots() {
   return (
@@ -15,15 +7,15 @@ export default function Screenshots() {
       <div className="mx-auto max-w-6xl">
         <div className="mb-16 text-center">
           <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl">
-            <span className="gradient-text-blue">앱 미리보기</span>
+            <span className="gradient-text-blue">{screenshotsContent.title}</span>
           </h2>
           <p className="mx-auto max-w-lg text-[var(--text-secondary)]">
-            직관적인 UI로 학습에만 집중하세요
+            {screenshotsContent.subtitle}
           </p>
         </div>
 
         <div className="flex gap-6 overflow-x-auto pb-8 hide-scrollbar snap-x snap-mandatory">
-          {screenshots.map((shot) => (
+          {screenshotsContent.items.map((shot) => (
             <div key={shot.src} className="flex flex-col items-center gap-4 snap-center shrink-0">
               <div className="phone-frame">
                 <Image
