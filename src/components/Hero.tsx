@@ -24,7 +24,7 @@ export default function Hero() {
         {/* Badge */}
         <div className="animate-fade-in-up animation-delay-100 mb-6 inline-flex items-center gap-2 rounded-full border border-[#4A6CF7]/20 bg-[#4A6CF7]/10 px-4 py-1.5 text-sm font-medium text-[#6B8AFF]">
           <span className="h-2 w-2 rounded-full bg-[#4A6CF7]" />
-          iOS 교육 앱
+          사진+PDF 가림막 암기 앱
         </div>
 
         {/* Title */}
@@ -34,13 +34,12 @@ export default function Hero() {
 
         {/* Subtitle */}
         <p className="animate-fade-in-up animation-delay-300 mb-3 text-xl font-medium text-[var(--text-secondary)] sm:text-2xl">
-          사진 찍고 3초 만에 암기 시작
+          이동 중에도 공부가 되게
         </p>
 
         {/* Tagline */}
         <p className="animate-fade-in-up animation-delay-400 mb-12 max-w-lg text-base text-[var(--text-secondary)] leading-relaxed">
-          교재나 필기 노트를 사진으로 찍고, 외울 부분을 가림막으로 덮어
-          반복 학습하세요. 공무원 · 자격증 · 수능 시험 준비에 딱!
+          열면 바로 공부. 짜투리 시간에 꺼내서 보고, 바로 닫을 수 있는 가림막 암기 앱입니다. 공무원 · 자격증 · 수능 · 기사 시험 준비에 딱!
         </p>
 
         {/* CTA Buttons */}

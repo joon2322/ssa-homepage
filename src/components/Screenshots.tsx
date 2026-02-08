@@ -1,11 +1,12 @@
 import Image from "next/image";
 
 const screenshots = [
-  { src: "/images/screen_93bae1ad88684d2a8466081eabbbf20e.png", caption: "학습 노트" },
-  { src: "/images/screen_684dfb1dfa964687bed2784da26b15a9.png", caption: "가림막 편집" },
-  { src: "/images/screen_c61fc6f24e6e41b69c340c84d745a0ff.png", caption: "학습 모드" },
-  { src: "/images/screen_7ffeb5dd9cf24b2d952e8bb55bf53393.png", caption: "마스크 관리" },
-  { src: "/images/screen_c71e72bfcd1643958ad0e153469fec54.png", caption: "시험 문제" },
+  { src: "/images/screen_splash.png", caption: "앱 시작" },
+  { src: "/images/screen_notes.png", caption: "노트 목록" },
+  { src: "/images/screen_mask_edit.png", caption: "가림막 편집" },
+  { src: "/images/screen_study.png", caption: "학습 모드" },
+  { src: "/images/screen_grading.png", caption: "채점하기" },
+  { src: "/images/screen_result.png", caption: "평가 결과" },
 ];
 
 export default function Screenshots() {

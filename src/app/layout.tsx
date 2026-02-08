@@ -11,7 +11,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "합격노트 - 찍고 가리고 외우는 자격증 암기",
   description:
-    "사진 찍고 가림막으로 핵심을 가리고 반복 학습. 공무원, 자격증, 수능 시험 대비 암기 앱. 오프라인 지원, 개인정보 수집 없음.",
+    "이동 중에도 공부가 되게 — 사진+PDF 가림막 암기 앱. 열면 바로 공부, 닫으면 바로 끝. 공무원, 자격증, 수능, 기사 시험 대비. 오프라인 지원, 개인정보 수집 없음.",
   keywords: [
     "합격노트",
     "암기앱",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "합격노트 - 찍고 가리고 외우는 자격증 암기",
     description:
-      "사진 찍고 가림막으로 핵심을 가리고 반복 학습. 공무원, 자격증, 수능 시험 대비 최고의 암기 앱.",
+      "이동 중에도 공부가 되게 — 사진+PDF 가림막 암기 앱. 공무원, 자격증, 수능, 기사 시험 대비.",
     type: "website",
     locale: "ko_KR",
     siteName: "합격노트",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "합격노트 - 찍고 가리고 외우는 자격증 암기",
     description:
-      "사진 찍고 가림막으로 핵심을 가리고 반복 학습. 공무원, 자격증, 수능 시험 대비 최고의 암기 앱.",
+      "이동 중에도 공부가 되게 — 사진+PDF 가림막 암기 앱. 공무원, 자격증, 수능, 기사 시험 대비.",
   },
   robots: {
     index: true,
