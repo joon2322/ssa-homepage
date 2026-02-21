@@ -1,10 +1,10 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
+import Program from "@/components/Program";
 import Screenshots from "@/components/Screenshots";
-import TargetUsers from "@/components/TargetUsers";
+import Feedback from "@/components/Feedback";
 import FAQ from "@/components/FAQ";
-import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -14,10 +14,10 @@ export default function Home() {
       <main>
         <Hero />
         <Features />
+        <Program />
         <Screenshots />
-        <TargetUsers />
+        <Feedback />
         <FAQ />
-        <CTA />
       </main>
       <Footer />
     </>

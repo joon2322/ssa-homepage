@@ -13,8 +13,8 @@ export default function Features() {
           </p>
         </div>
 
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {featuresContent.items.map((feature, i) => (
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-2">
+          {featuresContent.items.map((feature) => (
             <div
               key={feature.title}
               className="card-gradient-border group p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/20"
@@ -33,6 +33,12 @@ export default function Features() {
             </div>
           ))}
         </div>
+
+        {featuresContent.note ? (
+          <p className="mx-auto mt-10 max-w-3xl text-center text-sm text-[var(--text-muted)]">
+            {featuresContent.note}
+          </p>
+        ) : null}
       </div>
     </section>
   );

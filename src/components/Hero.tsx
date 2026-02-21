@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { siteConfig } from "@/data/config";
-import { heroContent } from "@/data/content";
+import { heroContent, feedbackContent } from "@/data/content";
 
 export default function Hero() {
   return (
@@ -44,28 +44,29 @@ export default function Hero() {
         </p>
 
         {/* CTA Buttons */}
-        <div className="animate-fade-in-up animation-delay-500 flex flex-col gap-4 sm:flex-row">
+        <div className="animate-fade-in-up animation-delay-500 flex flex-col gap-4 sm:flex-row sm:justify-center">
           <a
-            href={siteConfig.appStoreUrl ?? "#download"}
-            target={siteConfig.appStoreUrl ? "_blank" : undefined}
-            rel={siteConfig.appStoreUrl ? "noopener noreferrer" : undefined}
-            className="inline-flex items-center gap-3 rounded-full bg-[var(--accent-blue)] px-10 py-4 text-base font-semibold text-white transition-all duration-200 hover:bg-[var(--accent-blue-light)] hover:shadow-xl hover:shadow-[#4A6CF7]/25 hover:-translate-y-0.5"
+            href={siteConfig.feedbackUrl ?? `mailto:${siteConfig.contactEmail}?subject=%ED%95%A9%EA%B2%A9%EB%85%B8%ED%8A%B8%20%ED%94%BC%EB%93%9C%EB%B0%B1`}
+            className="inline-flex items-center justify-center gap-3 rounded-full bg-[var(--accent-blue)] px-10 py-4 text-base font-semibold text-white transition-all duration-200 hover:bg-[var(--accent-blue-light)] hover:shadow-xl hover:shadow-[#4A6CF7]/25 hover:-translate-y-0.5"
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 21.99 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 21.99C7.79 22.03 6.8 20.68 5.96 19.47C4.25 16.99 2.97 12.5 4.7 9.49C5.56 7.99 7.13 7.01 8.82 6.99C10.1 6.97 11.32 7.85 12.11 7.85C12.89 7.85 14.37 6.78 15.92 6.95C16.57 6.98 18.39 7.21 19.56 8.91C19.47 8.97 17.39 10.15 17.41 12.68C17.44 15.73 20.06 16.73 20.09 16.74C20.06 16.82 19.67 18.18 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z" />
-            </svg>
-            {siteConfig.appStoreUrl ? "App Store에서 다운로드" : "출시 준비 중"}
+            {feedbackContent.ctaLabel}
           </a>
           <a
-            href={siteConfig.githubUrl}
+            href={siteConfig.contributeUrl ?? "#program"}
+            className="inline-flex items-center justify-center gap-3 rounded-full border border-white/10 bg-white/5 px-10 py-4 text-base font-semibold text-[var(--text-secondary)] transition-all duration-200 hover:border-white/20 hover:bg-white/10 hover:text-white hover:-translate-y-0.5"
+          >
+            {feedbackContent.contributeLabel}
+          </a>
+        </div>
+
+        <div className="animate-fade-in-up animation-delay-600 mt-6 text-sm text-[var(--text-muted)]">
+          <a
+            href={siteConfig.appStoreUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-10 py-4 text-base font-semibold text-[var(--text-secondary)] transition-all duration-200 hover:border-white/20 hover:bg-white/10 hover:text-white hover:-translate-y-0.5"
+            className="hover:text-white underline-offset-4 hover:underline"
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
-            </svg>
-            GitHub에서 보기
+            App Store 열기
           </a>
         </div>
       </div>

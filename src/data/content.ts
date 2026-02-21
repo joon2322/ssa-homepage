@@ -1,118 +1,114 @@
 // src/data/content.ts
-// 모든 텍스트 콘텐츠를 중앙 관리합니다.
-// scripts/sync-content.sh로 GitHub README에서 자동 동기화됩니다.
-// 마지막 동기화: 2026-02-08
+// 홈페이지 텍스트 콘텐츠를 중앙 관리합니다.
 
 export const heroContent = {
-  badge: "사진+PDF 가림막 암기 앱",
+  badge: "가림막 학습노트",
   title: "합격노트",
-  subtitle: "이동 중에도 공부가 되게",
-  description: "열면 바로 공부. 짜투리 시간에 꺼내서 보고, 바로 닫을 수 있는 가림막 암기 앱입니다. 공무원 · 자격증 · 수능 · 기사 시험 준비에 딱!",
+  subtitle: "모든 수험생을 위한 학습노트",
+  description:
+    "가림막으로 핵심만 남기고, 필기로 정리하세요. 합격노트는 사용자 피드백을 바탕으로 더 좋아집니다.",
 };
 
 export const featuresContent = {
-  title: "핵심 기능",
-  subtitle: "시험 준비에 필요한 모든 것을 담았습니다",
+  title: "학습 흐름",
+  subtitle: "공부가 ‘방법’이 되도록 — 가림막부터 필기까지",
   items: [
     {
-      icon: "📸",
-      title: "사진 촬영 & 불러오기",
-      description: "카메라로 촬영하거나 사진첩에서 선택. PDF 파일도 가져올 수 있습니다.",
+      icon: "🟦",
+      title: "가림막으로 핵심만 남기기",
+      description:
+        "외울 부분을 가림막으로 덮고, 탭으로 확인하며 학습 흐름을 만드세요.",
     },
     {
-      icon: "🔲",
-      title: "가림막으로 핵심 가리기",
-      description: "외울 부분을 드래그하여 가림막을 만드세요. 탭하면 보이고, 다시 탭하면 숨깁니다.",
+      icon: "✍️",
+      title: "통합 필기 도구",
+      description:
+        "펜·마커·지우개를 한 곳에서. 표시하고, 정리하고, 지우는 과정이 자연스럽습니다.",
     },
     {
-      icon: "📖",
-      title: "학습 모드",
-      description: "가림막을 탭하며 자기 주도 학습. 핀치 줌, 페이지 스와이프를 지원합니다.",
+      icon: "🧪",
+      title: "셀프 테스트(모의평가)",
+      description:
+        "실제로 풀어보고 스스로 채점하세요. 틀린 것만 다시 확인할 수 있습니다.",
     },
     {
-      icon: "✅",
-      title: "평가 모드",
-      description: "스스로 채점하며 실력을 확인하세요. O / △ / X 세 단계로 채점하고, 틀린 문제만 골라 재학습할 수 있습니다.",
-    },
-    {
-      icon: "🖍️",
-      title: "형광펜 하이라이트",
-      description: "중요한 부분에 형광펜으로 표시. 색상 선택과 굵기 조절 가능.",
-    },
-    {
-      icon: "🔒",
-      title: "100% 로컬 저장",
-      description: "인터넷 없이도 언제든 학습. 데이터 수집 없음, 개인정보 안전.",
+      icon: "🔎",
+      title: "빠른 탐색 & 확대",
+      description:
+        "썸네일 패널과 핀치 줌으로 필요한 페이지를 빠르게 찾아 세밀하게 학습하세요.",
     },
   ],
+  note:
+    "v1.3 업데이트: 마커 직선화 · 썸네일 패널 · 줌/팬 개선 · 가림막 커스터마이징 · 필기감 개선",
+};
+
+export const programContent = {
+  title: "자료 제공 프로그램",
+  subtitle: "시험지/문제 자료를 제공해 주신 분들께 혜택을 드리는 프로그램을 준비 중입니다.",
+  status: "현재는 제한적으로 운영합니다.",
+  steps: [
+    {
+      title: "자료 제출",
+      description:
+        "공유 권한이 있는 자료만 제출해 주세요. 개인정보가 포함된 자료는 제출하지 말아 주세요.",
+    },
+    {
+      title: "검수/선별",
+      description:
+        "저작권/품질 기준으로 검수 후 일부 자료만 반영될 수 있습니다.",
+    },
+    {
+      title: "혜택 제공",
+      description:
+        "선정된 제공자에게 무료 이용 혜택을 제공합니다(운영 정책에 따라 변경 가능).",
+    },
+  ],
+  footnote:
+    "※ 저작권이 있는 기출/교재의 무단 공유는 금지됩니다. 제출 전 반드시 권한을 확인해 주세요.",
 };
 
 export const screenshotsContent = {
-  title: "앱 미리보기",
-  subtitle: "직관적인 UI로 학습에만 집중하세요",
+  title: "미리보기",
+  subtitle: "가림막부터 필기까지, 한 흐름으로",
   items: [
-    { src: "/images/screen_splash.png", caption: "앱 시작" },
-    { src: "/images/screen_notes.png", caption: "노트 목록" },
-    { src: "/images/screen_mask_edit.png", caption: "가림막 편집" },
+    { src: "/images/screen_notes.png", caption: "노트 관리" },
+    { src: "/images/screen_mask_edit.png", caption: "가림막" },
     { src: "/images/screen_study.png", caption: "학습 모드" },
-    { src: "/images/screen_grading.png", caption: "채점하기" },
-    { src: "/images/screen_result.png", caption: "평가 결과" },
-  ],
-};
-
-export const targetUsersContent = {
-  title: "이런 분께 추천합니다",
-  items: [
-    {
-      icon: "📝",
-      title: "수험생",
-      description: "공무원 · 자격증 · 수능 교재 핵심 암기",
-      highlight: "합격률 UP",
-    },
-    {
-      icon: "🎓",
-      title: "대학생",
-      description: "전공 시험 기간 빠른 복습",
-      highlight: "효율적 학습",
-    },
-    {
-      icon: "💼",
-      title: "직장인",
-      description: "이동 중 자투리 시간 암기",
-      highlight: "시간 절약",
-    },
+    { src: "/images/screen_grading.png", caption: "모의평가" },
+    { src: "/images/screen_result.png", caption: "필기" },
+    { src: "/images/screen_splash.png", caption: "시작" },
   ],
 };
 
 export const faqContent = {
-  title: "자주 묻는 질문",
+  title: "FAQ",
   items: [
     {
       q: "무료로 사용할 수 있나요?",
-      a: "네, 무료로 노트 10개, 노트당 페이지 20장까지 사용 가능합니다. Pro 업그레이드로 더 많은 노트와 페이지를 사용할 수 있습니다. (준비 중)",
+      a: "네. 노트 10개, 노트당 페이지 20장까지 무료로 사용 가능합니다.",
     },
     {
       q: "인터넷 연결이 필요한가요?",
-      a: "아니요, 합격노트는 100% 오프라인으로 동작합니다. 모든 데이터는 기기에만 저장됩니다.",
+      a: "기본 학습 기능은 오프라인에서도 사용할 수 있습니다.",
     },
     {
-      q: "개인정보는 안전한가요?",
-      a: "합격노트는 어떠한 개인정보도 수집하지 않습니다. 서버 전송 없음, 계정 시스템 없음, 분석 SDK 없음.",
+      q: "iCloud 동기화를 지원하나요?",
+      a: "네. iPhone과 iPad에서 노트를 자동으로 동기화합니다(iCloud 설정 필요).",
     },
     {
-      q: "어떤 기기에서 사용할 수 있나요?",
-      a: "현재 iOS 17.0 이상의 iPhone에서 사용 가능합니다.",
+      q: "자료 제공 프로그램은 누구나 참여할 수 있나요?",
+      a: "현재는 제한적으로 운영하며, 제출/선별 후 선정된 분들께 개별 안내드립니다.",
     },
     {
-      q: "PDF도 가져올 수 있나요?",
-      a: "네, PDF 파일을 가져와서 각 페이지를 학습 자료로 사용할 수 있습니다.",
+      q: "문의/피드백은 어디로 하면 되나요?",
+      a: "이메일로 보내주세요: joonstudio@jinkojoon.com",
     },
   ],
 };
 
-export const ctaContent = {
-  title: "오늘도 한 페이지,",
-  titleAccent: "내일의 합격을 위해",
-  description: "지금 바로 시작하세요. 무료입니다.",
-  footnote: "iOS 17.0 이상 · iPhone 전용 · 무료",
+export const feedbackContent = {
+  title: "피드백",
+  subtitle: "불편한 점/개선 아이디어가 합격노트를 더 좋게 만듭니다.",
+  ctaLabel: "불편한 점 제보하기",
+  contributeLabel: "자료 제공 신청(대기)",
 };

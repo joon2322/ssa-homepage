@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { siteConfig } from "@/data/config";
 
 export default function Footer() {
   return (
@@ -25,7 +26,7 @@ export default function Footer() {
             고객지원
           </a>
           <a
-            href="https://github.com/joon2322/SSA"
+            href={siteConfig.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="text-[var(--text-secondary)] transition-colors hover:text-white"
@@ -33,10 +34,10 @@ export default function Footer() {
             GitHub
           </a>
           <a
-            href="mailto:joon2322@gmail.com"
+            href={`mailto:${siteConfig.contactEmail}`}
             className="text-[var(--text-secondary)] transition-colors hover:text-white"
           >
-            joon2322@gmail.com
+            {siteConfig.contactEmail}
           </a>
         </div>
 

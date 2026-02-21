@@ -4,10 +4,11 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const navLinks = [
-  { href: "#features", label: "기능" },
-  { href: "#screenshots", label: "스크린샷" },
+  { href: "#features", label: "학습 흐름" },
+  { href: "#screenshots", label: "미리보기" },
+  { href: "#program", label: "자료 제공" },
+  { href: "#feedback", label: "피드백" },
   { href: "#faq", label: "FAQ" },
-  { href: "#download", label: "다운로드" },
 ];
 
 export default function Header() {
@@ -66,11 +67,11 @@ export default function Header() {
             </a>
           ))}
           <a
-            href="#download"
-            onClick={(e) => handleNavClick(e, "#download")}
+            href="#feedback"
+            onClick={(e) => handleNavClick(e, "#feedback")}
             className="ml-3 rounded-full bg-[var(--accent-blue)] px-5 py-2 text-sm font-semibold text-white transition-all duration-200 hover:bg-[var(--accent-blue-light)] hover:shadow-lg hover:shadow-[#4A6CF7]/25"
           >
-            다운로드
+            피드백
           </a>
         </div>
 
@@ -117,11 +118,11 @@ export default function Header() {
             </a>
           ))}
           <a
-            href="#download"
-            onClick={(e) => handleNavClick(e, "#download")}
+            href="#feedback"
+            onClick={(e) => handleNavClick(e, "#feedback")}
             className="mt-1 rounded-xl bg-[var(--accent-blue)] px-4 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-[var(--accent-blue-light)]"
           >
-            다운로드
+            피드백
           </a>
         </div>
       </div>

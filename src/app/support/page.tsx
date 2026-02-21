@@ -11,8 +11,8 @@ const supportItems = [
     icon: "📧",
     title: "이메일 문의",
     description: "기능 요청, 버그 신고, 일반 문의",
-    action: "joon2322@gmail.com",
-    href: "mailto:joon2322@gmail.com",
+    action: "joonstudio@jinkojoon.com",
+    href: "mailto:joonstudio@jinkojoon.com",
   },
   {
     icon: "💻",
