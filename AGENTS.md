@@ -10,6 +10,7 @@
 
 - **이 프로젝트의 채택/fork 상태**: fleet 기본값 사용 (fleet-skills v0.2.0 — skill 목록은 카탈로그 README 기준)
 - 로컬 튜닝 필요 시: `.claude/skills/` 로 fork → 이 블록 + 채택 원장(FLEET_SKILLS_DESIGN.md) 동시 갱신
+- **다른 fleet 프로젝트 참고 시**: repo 를 직접 열기 전에 기술 지도 `~/Projects/ai-workstation/docs/control-tower/FLEET_MAP.generated.md` 먼저 (스택·구조·진입점·신선도)
 
 ## 프로젝트
 합격노트(SSA) iOS 앱 제품 홈페이지. ssa.jinkojoon.com에서 서비스 중.
