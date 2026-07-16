@@ -8,7 +8,7 @@
 > **정본·카탈로그**: `~/Projects/ai-workstation/plugins/fleet-skills/README.md` (컨트롤타워 관리 — **copy 금지**, 설계: `ai-workstation/docs/control-tower/FLEET_SKILLS_DESIGN.md`)
 > 실행 레이어: Claude = plugin `fleet-skills@joon-fleet`(user-scope) · Codex = `~/.agents/skills` symlink(`ai-workstation/scripts/fleet-skills-sync.sh`) · 기타 에이전트 = 카탈로그에서 SKILL.md 직접 읽고 수동 적용.
 
-- **이 프로젝트의 채택/fork 상태**: fleet 기본값 사용 (fleet-skills v0.2.0 — skill 목록은 카탈로그 README 기준)
+- **이 프로젝트의 채택/fork 상태**: fleet 기본값 사용 (fleet-skills v0.4.1 — skill 목록은 카탈로그 README 기준)
 - 로컬 튜닝 필요 시: `.claude/skills/` 로 fork → 이 블록 + 채택 원장(FLEET_SKILLS_DESIGN.md) 동시 갱신
 - **다른 fleet 프로젝트 참고 시**: repo 를 직접 열기 전에 기술 지도 `~/Projects/ai-workstation/docs/control-tower/FLEET_MAP.generated.md` 먼저 (스택·구조·진입점·신선도)
 
@@ -56,3 +56,16 @@ vercel --yes --prod --token TOKEN
 - 외부 라이브러리 추가 금지 (CSS only 애니메이션)
 - 스크린샷은 반드시 리사이즈 후 사용 (750px 이하)
 - Vercel 토큰 문서 포함 금지
+
+---
+
+## 🤝 Universal Agent Collaboration (`v1.2.0-rc.1` opt-in)
+
+이 repo는 ai-workstation의 tool-neutral 공통 협업 계약을 명시적으로 채택한다. 아래 규칙은 Claude·Codex·OpenCode·외부 agent 모두에 동일하게 적용하며, 이 프로젝트의 기존 배포·credential 규칙이 더 구체적이면 그 규칙이 우선한다.
+
+- 어떤 agent든 `main driver`, `independent reviewer`, `specialist`가 될 수 있다. 제품명은 역할이나 권위를 정하지 않는다.
+- 같은 checkout에는 writer 1명만 둔다. 병렬 writer는 각각 별도 branch+worktree와 파일·공유자원 ownership을 가진다.
+- 리뷰 강도는 R0/R1(main 검증)·R2(fresh read-only reviewer 1명)·R3(독립 경로 2개 이상 고려)로 실패 비용에 비례시킨다.
+- reviewer는 fresh read-only advisory다. finding은 맥락을 가진 main이 `accept/reject/defer`하고, 고위험·범위 확장·미해결 이견만 Joon과 결정한다.
+- global skill discovery는 채택이 아니다. 이 절이 `independent-review` 자동 적용의 project opt-in 근거다.
+- 공통 계약 정본: `~/Projects/ai-workstation/templates/claude-harness/docs/AGENT_COLLABORATION.md`
