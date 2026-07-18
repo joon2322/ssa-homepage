@@ -22,70 +22,139 @@ export default function PrivacyPage() {
 
         <h1 className="mb-2 text-3xl font-bold gradient-text">합격노트 개인정보 처리방침</h1>
         <p className="mb-10 text-sm text-[var(--text-muted)]">
-          시행일: 2026년 2월 6일 | 최종 수정: 2026년 2월 6일
+          시행일: 2026년 7월 18일 | 최종 수정: 2026년 7월 18일
         </p>
 
         <div className="mb-10 rounded-2xl border border-[#4A6CF7]/20 bg-[#4A6CF7]/5 p-6">
           <p className="text-sm font-medium leading-relaxed text-[var(--text-primary)]">
-            <strong>합격노트는 개인정보를 수집하지 않습니다.</strong>
-            <br />
-            모든 데이터는 사용자의 기기에만 저장되며, 외부 서버로 전송되지 않습니다.
+            합격노트는 회원가입 없이 사용할 수 있습니다. 학습 자료는 기기와 사용자의 iCloud에 저장되며,
+            서비스 개선을 위한 사용 통계는 Firebase Analytics로 전송됩니다. 학습 이미지, 노트 제목,
+            프로필 이름과 사진은 분석 정보에 포함하지 않습니다.
           </p>
         </div>
 
         <div className="space-y-8 text-sm leading-relaxed text-[var(--text-secondary)]">
           <section>
-            <h2 className="mb-3 text-lg font-semibold text-[var(--text-primary)]">1. 수집하는 개인정보</h2>
-            <p className="mb-3">합격노트는 어떠한 개인정보도 수집, 저장, 전송하지 않습니다.</p>
-            <ul className="list-disc space-y-1.5 pl-5">
-              <li>회원가입 및 로그인 기능이 없습니다.</li>
-              <li>이름, 이메일, 전화번호 등 개인 식별 정보를 요구하지 않습니다.</li>
-              <li>사용자 행동 분석, 추적(트래킹)을 수행하지 않습니다.</li>
-              <li>광고 SDK나 분석 SDK를 포함하지 않습니다.</li>
+            <h2 className="mb-3 text-lg font-semibold text-[var(--text-primary)]">1. 처리하는 정보</h2>
+            <p className="mb-3">합격노트는 앱 기능 제공을 위해 다음 정보를 처리합니다.</p>
+            <ul className="list-disc space-y-2 pl-5">
+              <li>
+                <strong>학습 자료와 기록</strong>: 노트 제목, 촬영하거나 가져온 이미지, 가림막, 필기와
+                마커, 평가 결과 및 학습 기록
+              </li>
+              <li>
+                <strong>프로필과 설정</strong>: 사용자가 앱에서 설정한 표시 이름, 프로필 사진 및 앱 설정
+              </li>
+              <li>
+                <strong>사용 분석 정보</strong>: 앱 설치를 구분하는 앱 인스턴스 식별자, 앱·기기 정보,
+                대략적인 지역, 세션 정보, 노트 생성·학습·평가·기능 사용과 이용 한도 도달 등의 이벤트
+              </li>
             </ul>
-          </section>
-
-          <section>
-            <h2 className="mb-3 text-lg font-semibold text-[var(--text-primary)]">2. 기기 내 저장 데이터</h2>
-            <p className="mb-3">합격노트에서 생성하는 모든 데이터는 사용자의 iPhone에만 로컬 저장됩니다:</p>
-            <ul className="list-disc space-y-1.5 pl-5">
-              <li><strong>학습 노트</strong>: 사용자가 촬영하거나 가져온 사진 및 가림막 정보</li>
-              <li><strong>프로필 정보</strong>: 사용자가 설정한 표시 이름 및 프로필 사진 (기기 내 저장)</li>
-              <li><strong>학습 기록</strong>: 평가 모드 채점 결과 (기기 내 저장)</li>
-            </ul>
-            <p className="mt-3">이 데이터는 인터넷을 통해 전송되지 않으며, 앱을 삭제하면 함께 삭제됩니다.</p>
-          </section>
-
-          <section>
-            <h2 className="mb-3 text-lg font-semibold text-[var(--text-primary)]">3. 카메라 및 사진 라이브러리 접근</h2>
-            <p className="mb-3">합격노트는 다음 기기 기능에 대한 접근 권한을 요청합니다:</p>
-            <ul className="list-disc space-y-1.5 pl-5">
-              <li><strong>카메라</strong>: 학습 자료를 직접 촬영하기 위해 사용합니다.</li>
-              <li><strong>사진 라이브러리</strong>: 기존 사진을 학습 자료로 가져오기 위해 사용합니다.</li>
-            </ul>
-            <p className="mt-3">촬영하거나 선택한 사진은 앱 내부 저장소에만 보관되며, 외부로 전송되지 않습니다.</p>
-          </section>
-
-          <section>
-            <h2 className="mb-3 text-lg font-semibold text-[var(--text-primary)]">4. 제3자 제공</h2>
-            <p>합격노트는 어떠한 데이터도 제3자에게 제공, 공유, 판매하지 않습니다.</p>
-          </section>
-
-          <section>
-            <h2 className="mb-3 text-lg font-semibold text-[var(--text-primary)]">5. 아동 개인정보 보호</h2>
-            <p>합격노트는 개인정보를 수집하지 않으므로, 아동(만 14세 미만)의 개인정보 역시 수집하지 않습니다.</p>
-          </section>
-
-          <section>
-            <h2 className="mb-3 text-lg font-semibold text-[var(--text-primary)]">6. 개인정보 처리방침 변경</h2>
-            <p>본 개인정보 처리방침은 변경될 수 있으며, 변경 시 이 페이지를 통해 공지합니다. 중요한 변경 사항이 있을 경우 앱 내 공지를 통해 알려드립니다.</p>
-          </section>
-
-          <section>
-            <h2 className="mb-3 text-lg font-semibold text-[var(--text-primary)]">7. 문의</h2>
-            <p>
-              개인정보 처리방침에 대한 문의 사항이 있으시면 아래로 연락해 주세요.
+            <p className="mt-3">
+              합격노트는 회원가입, 로그인, 이메일 또는 전화번호 입력을 요구하지 않습니다. 광고 식별자
+              IDFA를 수집하는 Firebase 모듈과 광고 SDK도 사용하지 않습니다.
             </p>
+          </section>
+
+          <section>
+            <h2 className="mb-3 text-lg font-semibold text-[var(--text-primary)]">2. 처리 목적</h2>
+            <ul className="list-disc space-y-2 pl-5">
+              <li>학습 노트 생성, 가림막·필기, 평가 및 복습 기능 제공</li>
+              <li>사용자의 Apple 기기 간 학습 자료 동기화</li>
+              <li>기능 사용 현황과 이용 흐름을 집계하여 오류와 사용성을 개선</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="mb-3 text-lg font-semibold text-[var(--text-primary)]">3. 저장 및 전송</h2>
+            <ul className="list-disc space-y-2 pl-5">
+              <li>
+                학습 자료와 기록은 기기에 저장됩니다. iCloud를 사용할 수 있는 경우 Apple iCloud Drive와
+                CloudKit을 통해 사용자의 Apple 기기 사이에서 동기화됩니다.
+              </li>
+              <li>프로필 이름과 사진은 앱의 기기 내 저장 공간에 저장됩니다.</li>
+              <li>
+                사용 분석 정보는 Google Firebase Analytics로 전송됩니다. Firebase Analytics에는 학습
+                이미지, 노트 제목, 프로필 이름과 사진을 전송하지 않습니다.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="mb-3 text-lg font-semibold text-[var(--text-primary)]">4. 카메라 및 사진 접근</h2>
+            <p className="mb-3">학습 자료를 만들 때 다음 기기 기능을 사용합니다.</p>
+            <ul className="list-disc space-y-2 pl-5">
+              <li><strong>카메라</strong>: 학습 자료 촬영</li>
+              <li><strong>사진 보관함</strong>: 사용자가 선택한 이미지 가져오기 및 프로필 사진 설정</li>
+            </ul>
+            <p className="mt-3">
+              접근은 사용자가 해당 기능을 실행하고 iOS 권한을 허용한 경우에만 이루어집니다.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="mb-3 text-lg font-semibold text-[var(--text-primary)]">5. 외부 서비스</h2>
+            <p className="mb-3">합격노트는 다음 서비스 제공자를 이용합니다.</p>
+            <ul className="list-disc space-y-2 pl-5">
+              <li>
+                <strong>Apple iCloud 및 CloudKit</strong>: 학습 자료 저장과 기기 간 동기화
+                {" "}
+                <a
+                  href="https://www.apple.com/legal/privacy/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[#4A6CF7] hover:underline"
+                >
+                  Apple 개인정보 처리방침
+                </a>
+              </li>
+              <li>
+                <strong>Google Firebase Analytics</strong>: 앱 사용 통계의 수집과 분석
+                {" "}
+                <a
+                  href="https://firebase.google.com/support/privacy/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[#4A6CF7] hover:underline"
+                >
+                  Firebase 개인정보 및 보안 안내
+                </a>
+              </li>
+            </ul>
+            <p className="mt-3">
+              합격노트는 개인정보나 학습 자료를 판매하지 않으며 맞춤형 광고를 제공하지 않습니다.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="mb-3 text-lg font-semibold text-[var(--text-primary)]">6. 보관 및 삭제</h2>
+            <ul className="list-disc space-y-2 pl-5">
+              <li>
+                삭제한 노트는 앱의 휴지통에 최대 30일간 보관되며, 사용자가 영구 삭제하거나 보관 기간이
+                지나면 삭제됩니다.
+              </li>
+              <li>
+                앱을 삭제하면 기기에만 저장된 정보는 삭제됩니다. iCloud에 동기화된 정보는 사용자의
+                iCloud 설정과 Apple 정책에 따라 별도로 관리될 수 있습니다.
+              </li>
+              <li>
+                Firebase Analytics 정보는 Google Analytics 속성에 설정된 보관 정책에 따라 처리됩니다.
+                분석 정보 처리에 관한 문의는 아래 이메일로 요청할 수 있습니다.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="mb-3 text-lg font-semibold text-[var(--text-primary)]">7. 처리방침 변경</h2>
+            <p>
+              앱의 기능이나 외부 서비스가 변경되면 이 페이지의 시행일과 내용을 갱신합니다. 중요한 변경
+              사항은 앱 또는 공식 홈페이지를 통해 안내합니다.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="mb-3 text-lg font-semibold text-[var(--text-primary)]">8. 문의</h2>
+            <p>개인정보 처리와 관련한 문의는 아래 이메일로 보내주세요.</p>
             <p className="mt-2">
               이메일:{" "}
               <a href="mailto:joonstudio@jinkojoon.com" className="text-[#4A6CF7] hover:underline">
